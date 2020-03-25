@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="index.html" method="post" onsubmit="return myfunc()">
+Name :<input id="userName" type="text" name="userName" onblur="userName_check()">
+<span id="userName_msg"></span></br>
+Email :<input id="email" type="text" name="email" onblur="email_check()"  >
+<span id="email_msg"></span></br>
+Gender :<input id="gender" type="radio"  name="gender"  value=""  onblur="gender_check()">Male 
+<input id="gender" type="radio"  name="gender"  value=""   onblur="gender_check()" >Female
+<input id="gender" type="radio"  name="gender"  value=""  onblur="gender_check()" >Other
+<span id="gender_msg"></span></br>
+Date :<input id="date" type="date" name="date" value="" onblur="check_date"  >
+<span id="date_msg"></span></br>
+Blood group :
+ <select id="blood"  name="blood" "  onblur="username_check()" >
+ <option>A+</option>
+ <option>B+</option>
+ <option>A-</option>
+ </select>
+ <span id="blood_msg"></span></br>
+ Degree :<input id="degree" type="checkbox"  name="degree"  value=""  onblur="degree_check" >CS
+<input id="degree" type="checkbox"  name="degree" value="" onblur="degree_check"   >CSE
+<input id="degree" type="checkbox"   name="degree"  value="" onblur="degree_check"  >CSSE
+ <span id="blood_msg"></span></br>
+Profile pic:<input id="ppic" type="file" name="ppic"  value=""   >
+ <span id="ppic_msg"></span></br></br>
+<button>Submit</button>
+</form>
+<script type="text/javascript" src="form_submit.js"></script>
+</body>
+</html>
